@@ -1,0 +1,34 @@
+<h2 style="color: red">Emojis are fetched from the API <a href="https://api.github.com/emojis" target="blank">https://api.github.com/emojis</a></h2>
+<div class="emoji-container" cdkDropListGroup>    
+    <div class="drag-container"
+        cdkDropList
+        cdkDropListSortingDisabled
+        [cdkDropListData]="draggableEmojiList"
+        (cdkDropListDropped)="drop($event)"
+    >
+        <mat-spinner *ngIf="fetchingEmojis" class="spinner"></mat-spinner>
+        <img 
+            *ngFor="let emoji of draggableEmojiList"
+            src={{emoji[1]}}
+            class="emoji-img"
+            cdkDrag
+        />
+    </div>
+    <div class="drop-container"
+        cdkDropList
+        [cdkDropListData]="droppedEmojiList"
+        (cdkDropListDropped)="drop($event)"
+    >
+        <img 
+            *ngFor="let dropitem of droppedEmojiList"
+            src={{dropitem[1]}}
+            class="emoji-img"
+        />
+    </div>
+    
+    <app-emoji-status 
+        [draggableEmojiList]="draggableEmojiList"
+        [droppedEmojiList]="droppedEmojiList"
+    >
+    </app-emoji-status>
+</div>

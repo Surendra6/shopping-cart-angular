@@ -1,0 +1,12 @@
+<div style="display: flex; margin-left: 20px;">
+    <div class="container">Draggable List [{{draggableEmojiList.length}} items] : 
+        <ul>
+            <li *ngFor="let dragItem of draggableEmojiList"> {{dragItem[0]}}</li>
+        </ul>    
+    </div>
+    <div class="container">Dropped List [{{droppedEmojiList.length}} items] : 
+        <ul>
+            <li *ngFor="let droppedItem of droppedEmojiList"> {{droppedItem[0]}}</li>
+        </ul>    
+    </div>
+</div>

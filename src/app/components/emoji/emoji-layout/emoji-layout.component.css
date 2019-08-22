@@ -1,0 +1,32 @@
+.emoji-container {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.drag-container {
+    border: 1px solid grey;
+    flex: 1;
+    border-radius: 10px;
+    min-height: 500px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.drop-container {
+    border: 1px solid grey;
+    flex: 1;
+    border-radius: 10px;
+    min-height: 500px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.emoji-img {
+    padding: 20px;
+    cursor: move;
+}
+
+.spinner {
+    margin: 70px auto;
+}

@@ -1,0 +1,15 @@
+.grid-list {
+    background-color: #fafafa;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.grid-tile {
+    height: 100px;
+}
+
+.card-tile {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}

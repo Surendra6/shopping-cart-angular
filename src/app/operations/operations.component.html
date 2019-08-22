@@ -1,0 +1,13 @@
+<form #operations = "ngForm" (ngSubmit) = "onSubmit(operations.value)">
+    <input type='number' name = "operand1" placeholder="Operand 1" ngModel required/>
+    <span>{{operator}}</span>
+    <input type='number' name = "operand2" placeholder="Operand 2" ngModel required/>
+    <br/>
+    <input type='submit' />
+</form>
+<div>
+    <!-- ngIf example -->
+    <!-- <span *ngIf="result">Result: {{result}}</span> --> 
+
+    <span *ngIf="result">Result: {{result}}</span>
+</div>

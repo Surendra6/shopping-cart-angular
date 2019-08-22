@@ -1,0 +1,46 @@
+<div class="drag-container">
+  <h2>Available numbers</h2>
+
+  <div
+    id="all"
+    cdkDropList
+    cdkDropListSortingDisabled
+    [cdkDropListData]="all"
+    cdkDropListConnectedTo="even"
+    class="drag-list"
+    (cdkDropListDropped)="drop($event)"
+    [cdkDropListEnterPredicate]="noReturnPredicate">
+    <div
+      class="example-box"
+      *ngFor="let number of all"
+      [cdkDragData]="number"
+      cdkDrag>{{number}}
+    </div>
+  </div>
+</div>
+
+<div class="drop-container">
+  <h2>Even numbers</h2>
+
+  <div
+    id="even"
+    cdkDropList
+    cdkDropListDisabled
+    [cdkDropListData]="even"
+    cdkDropListConnectedTo="all"
+    class="dropped-list"
+    (cdkDropListDropped)="drop($event)"
+    [cdkDropListEnterPredicate]="evenPredicate">
+    <div
+      class="example-box"
+      *ngFor="let number of even"
+    >{{number}} Dropped
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
