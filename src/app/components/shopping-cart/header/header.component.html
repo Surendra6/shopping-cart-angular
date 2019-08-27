@@ -1,4 +1,11 @@
 <mat-toolbar color="primary" class="toolbar">
     <button mat-icon-button (click)="menuOpen()"><mat-icon>menu</mat-icon></button>
-    <h1 class="example-app-name">Shopping Cart</h1>
+    <h1 class="logo-spacer">Shopping Cart</h1>
+    <!-- <button class="icon-cls" mat-icon-button (click)="menuOpen()"><mat-icon>favorite</mat-icon></button> -->
+    <button class="icon-cls" mat-icon-button (click)="profileClick()">
+        <mat-icon><i class="material-icons">account_circle</i></mat-icon>
+    </button>
+    <button class="icon-cls" mat-button routerLink="/">
+        <i class="material-icons">chevron_left</i> Back To Dashboard
+    </button>
 </mat-toolbar>

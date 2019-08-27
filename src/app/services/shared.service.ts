@@ -7,8 +7,8 @@ import { BehaviorSubject } from 'rxjs';
 export class SharedService {
 
   sideNav: any;
-  private menuElement = new BehaviorSubject<string>(this.sideNav);
-
+  //private menuElement = new BehaviorSubject<string>(this.sideNav);
+  
   constructor() { }
 
   menuToggle() {

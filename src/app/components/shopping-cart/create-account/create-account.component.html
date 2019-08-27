@@ -1,0 +1,28 @@
+<div mat-dialog-content>
+    <div>
+        <div class="heading">Create Account</div>
+        <span class="icon-close" (click)="closePopup()">
+            <i class="material-icons">close</i>
+        </span>
+    </div>
+    <mat-form-field class="form-fields">
+        <input matInput placeholder="First Name" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput placeholder="Last Name" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput placeholder="Email" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput placeholder="Phone Number" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput type="password" placeholder="Password" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput type="password" placeholder="Confirm Password" />
+    </mat-form-field>
+    <button mat-raised-button class="btn" color="primary" (click)="createAccount()">Submit</button> <br/>
+    <div class="already-user">Already have an account? <span class="create-account-link" (click)="navigateToSignIn()">Sign In</span></div>
+</div>

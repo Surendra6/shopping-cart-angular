@@ -1,0 +1,39 @@
+.form-fields {
+    width: 100%;
+}
+
+.login-container {
+    padding: 5%;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 0 15px 0;
+    display: inline-block;
+}
+
+.create-account-link {
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+}
+
+.already-user {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.icon-close {
+    float: right;
+    margin-right: -15px;
+    margin-top: -5px;
+    color: red;
+    cursor: pointer;
+}

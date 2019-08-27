@@ -9,10 +9,6 @@ export class ScaffoldingComponent implements OnInit {
 
   constructor() { }
 
-  selectTile() {
-    //alert("hi");
-  }
-
   ngOnInit() {
   }
 

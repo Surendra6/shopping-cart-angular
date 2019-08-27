@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+    <div>
+        <div class="heading">Login</div>
+        <span class="icon-close" (click)="closePopup()">
+            <i class="material-icons">close</i>
+        </span>
+    </div>
+    <mat-form-field class="form-fields">
+        <input matInput placeholder="Email" />
+    </mat-form-field>
+    <mat-form-field class="form-fields">
+        <input matInput type="password" placeholder="Password" />
+    </mat-form-field>
+    <button mat-raised-button class="btn" color="primary">Sign In</button> <br/>
+    <div class="create-account-link" (click)="navigateToForgotPassword()">Forgot Password?</div>
+    <div class="create-account-link" (click)="navigateToCreateAccount()">New User? Create an Account</div>
+</div>

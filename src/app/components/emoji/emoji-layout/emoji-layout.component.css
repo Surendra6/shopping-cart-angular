@@ -4,6 +4,17 @@
     margin: 0 auto;
 }
 
+.emoji-header-info {
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+    margin: 20px 0;
+}
+
+.btn-dashboard {
+    float: right;
+}
+
 .drag-container {
     border: 1px solid grey;
     flex: 1;

@@ -13,3 +13,7 @@
     height: 150px;
     cursor: pointer;
 }
+
+.card-img {
+    height: 80%;
+}

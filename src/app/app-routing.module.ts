@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ScaffoldingComponent } from '../app/components/scaffolding/scaffolding.component';
+import { NoMatchFoundComponent } from './components/no-match-found/no-match-found.component';
 
 
 const routes: Routes = [{
@@ -15,6 +16,10 @@ const routes: Routes = [{
 {
   path: '',
   component: ScaffoldingComponent
+},
+{
+  path: '**',
+  component: NoMatchFoundComponent
 }];
 
 @NgModule({

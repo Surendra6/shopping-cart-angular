@@ -1,0 +1,3 @@
+<app-login (popUpContainerEvent)="receivePopUpContainerInfo($event)" *ngIf="popUpContainer==='sign-in'"></app-login>
+<app-create-account (signInEvent)="receivePopUpContainerInfo($event)" *ngIf="popUpContainer==='create-account'"></app-create-account>
+<app-forgot-password (popUpContainerEvent)="receivePopUpContainerInfo($event)" *ngIf="popUpContainer==='forgot-password'"></app-forgot-password>

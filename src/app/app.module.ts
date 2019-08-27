@@ -18,6 +18,7 @@ import { ShareOperationService } from "./share-operation.service";
 import { CdkDragDropEnterPredicateExample } from './drag-and-drop/cdk-drag-drop-enter-predicate-example';
 import { LayoutComponent } from './layout/layout.component';
 import { ScaffoldingComponent } from './components/scaffolding/scaffolding.component';
+import { NoMatchFoundComponent } from './components/no-match-found/no-match-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ScaffoldingComponent } from './components/scaffolding/scaffolding.compo
     OperatorsComponent,
     CdkDragDropEnterPredicateExample,
     LayoutComponent,
-    ScaffoldingComponent
+    ScaffoldingComponent,
+    NoMatchFoundComponent
   ],
   imports: [
     BrowserModule,
