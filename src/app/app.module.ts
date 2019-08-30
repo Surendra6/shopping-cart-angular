@@ -7,7 +7,6 @@ import { DemoMaterialModule } from '../material-module';    // Angular material 
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { OperationsComponent } from './operations/operations.component';
 import { OperatorsComponent } from './operators/operators.component';
 
@@ -23,7 +22,6 @@ import { NoMatchFoundComponent } from './components/no-match-found/no-match-foun
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     OperationsComponent,
     OperatorsComponent,
     CdkDragDropEnterPredicateExample,
